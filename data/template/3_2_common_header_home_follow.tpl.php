@@ -44,6 +44,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/base.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/homepage.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/shutter.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/function_button_style.css">
 
 </head>
 

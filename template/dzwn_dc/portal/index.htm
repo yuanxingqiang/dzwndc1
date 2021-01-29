@@ -149,11 +149,31 @@
 					</div>
 				</div>
 				<div class="right_stomach">
-				    <div class="function_buttons">
-					    <div class="once_button">
-						    <button class="main_button">发  布</button>
+				   <!-- <div class="function_buttons">  -->
+					    <div class="c-dropdown js-dropdown">
+						    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+							<span class="c-button c-button--dropdown js-dropdown__current">我  要  发  布</span>
+							    <ul class="c-dropdown__list">
+								    <li class="c-dropdown__item" data-dropdown-value="angular">发 帖 子</li>
+									<li class="c-dropdown__item" data-dropdown-value="backbone">发 日 志</li>
+									<li class="c-dropdown__item" data-dropdown-value="ember">发 活 动</li>
+									<li class="c-dropdown__item" data-dropdown-value="knockout">发 广 播</li>
+								</ul>
 						</div>
-					</div>
+
+						<script  src="{$_G['siteurl']}static/dzwn_v1/js/function_button1.js"></script>
+					
+					<!--
+					    <div class="once_button">
+						    <button id="main_button" onclick="button_click();">发  布</button>
+							<button class="forum_button" >发 帖 子</button>
+							<button class="forum_button" >发 日 志</button>
+							<button class="forum_button" >发 活 动</button>
+							<button class="forum_button" >发 广 播</button>
+						</div>
+					-->
+						    
+					<!--</div>  -->
 					<div class="ranks">
 						<div class="rank" id="attention">
 							<div class="rank_head" id="attention_head">
@@ -254,6 +274,19 @@
         </div>
       
 	</div>
+
+<script>
+    function button_click(){
+	    var old_button = document.getElementById("main_button");
+		var new_buttons = document.getElementsByClassName("forum_button");
+		
+		old_button.style.display = "none";
+		for(var i = 0;i<new_buttons.length;i++){
+		    new_buttons[i].style.display = "inline-block";
+		}
+		
+	}
+</script>
 
 </body>
 </html>

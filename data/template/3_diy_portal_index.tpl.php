@@ -138,69 +138,37 @@ fullPage: false // 是否全屏展示
 </div>
 </a>
 
-<a href="#">
-<div class="article_synopsis">
-    <div class="article_left">
-<div class="article_title">
-此处为文章标题
-</div>
-<div class="article_abstract">
-此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
-</div>
-</div>
-<div class="article_right">
-<div class="article_pic">
-<img class="article_img" src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/hmbb.jpg" />
-</div>
-</div>
-</div>
-</a>
 
-<a href="#">
-<div class="article_synopsis">
-    <div class="article_left">
-<div class="article_title">
-此处为文章标题
-</div>
-<div class="article_abstract">
-此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
-</div>
-</div>
-<div class="article_right">
-<div class="article_pic">
-<img class="article_img" src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/pkq.jpg"/>
-</div>
-</div>
-</div>
-</a>
-
-<a href="#">
-<div class="article_synopsis">
-    <div class="article_left">
-<div class="article_title">
-此处为文章标题
-</div>
-<div class="article_abstract">
-此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
-</div>
-</div>
-<div class="article_right">
-<div class="article_pic">
-<img class="article_img" src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/hlq.jpg" />
-</div>
-</div>
-</div>
-</a>
 -->
 
 </div>
 </div>
 <div class="right_stomach">
-    <div class="function_buttons">
+   <!-- <div class="function_buttons">  -->
+    <div class="c-dropdown js-dropdown">
+    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+<span class="c-button c-button--dropdown js-dropdown__current">我  要  发  布</span>
+    <ul class="c-dropdown__list">
+    <li class="c-dropdown__item" data-dropdown-value="angular">发 帖 子</li>
+<li class="c-dropdown__item" data-dropdown-value="backbone">发 日 志</li>
+<li class="c-dropdown__item" data-dropdown-value="ember">发 活 动</li>
+<li class="c-dropdown__item" data-dropdown-value="knockout">发 广 播</li>
+</ul>
+</div>
+
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/function_button1.js" type="text/javascript"></script>
+
+<!--
     <div class="once_button">
-    <button class="main_button">发  布</button>
+    <button id="main_button" onclick="button_click();">发  布</button>
+<button class="forum_button" >发 帖 子</button>
+<button class="forum_button" >发 日 志</button>
+<button class="forum_button" >发 活 动</button>
+<button class="forum_button" >发 广 播</button>
 </div>
-</div>
+-->
+    
+<!--</div>  -->
 <div class="ranks">
 <div class="rank" id="attention">
 <div class="rank_head" id="attention_head">
@@ -298,6 +266,19 @@ fullPage: false // 是否全屏展示
         </div>
       
 </div>
+
+<script>
+    function button_click(){
+    var old_button = document.getElementById("main_button");
+var new_buttons = document.getElementsByClassName("forum_button");
+
+old_button.style.display = "none";
+for(var i = 0;i<new_buttons.length;i++){
+    new_buttons[i].style.display = "inline-block";
+}
+
+}
+</script>
 
 </body>
 </html>
