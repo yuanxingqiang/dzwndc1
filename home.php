@@ -26,7 +26,7 @@ $discuz->init();
 $space = array();
 
 $mod = getgpc('mod');
-if(!in_array($mod, array('space', 'spacecp', 'misc', 'magic', 'editor', 'invite', 'task', 'medal', 'rss', 'follow'))) {
+if(!in_array($mod, array('space', 'spacecp', 'misc', 'magic', 'editor', 'invite', 'task', 'medal', 'rss', 'follow', 'setting'))) {
 	$mod = 'space';
 	$_GET['do'] = 'home';
 }

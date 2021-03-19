@@ -1,0 +1,135 @@
+.block{ display:block}
+.clearfix{ clear:both; margin:0; padding:0; height:0}
+/*收藏*/
+.collection{margin-top: 3px;margin-left: 3px;width: 100%;height: auto;overflow: hidden;position: relative;border: 1px solid #fafafa;box-shadow: 0px 0px 2px rgba(0,0,0,0.15);background: #fff;float: left;margin-bottom: 20px;border-radius: 4px;}
+.collection .account{ min-height:180px;padding:20px;}
+.collection .account .account-img{width:120px}
+.collection .account .account-img ul{ padding-top:16px}
+.collection .account .account-img ul li{ width:49%; float:left; border-left:#ccc solid 1px;}
+.collection .account .account-img ul li:first-child{ border-left:none}
+.collection .account .account-img ul li h1{ padding-bottom:4px; font-size:18px; text-align:center; color:#77d4c6}
+.collection .account .account-img ul li span{ font-size:12px; text-align:center}
+.collection .account .account-name{ margin-left:30px}
+.collection .account .account-name h1{ padding-bottom:20px; font-size:22px;}
+.collection .account .account-name h1 a{ font-size:14px; color:#77d4c6;}
+.collection .account .account-name h1 a{
+    /* older safari/Chrome browsers */
+    -webkit-opacity: 0;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 0;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 0;
+    /* IE9 + etc...modern browsers */
+    opacity: 0;
+    /* IE 4-9 */
+    filter:alpha(opacity=0);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.collection .account .account-name span{ display:block; font-size:14px; padding-bottom:10px}
+.collection .account:hover .account-name h1 a{
+	    /* older safari/Chrome browsers */
+    -webkit-opacity: 1;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 1;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 1;
+    /* IE9 + etc...modern browsers */
+    opacity: 1;
+    /* IE 4-9 */
+    filter:alpha(opacity=100);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.collection .account .account-data{}
+.collection .account .account-data li{ float:left}
+.collection .account .account-data li{ width:90px; float:left; border-left:#ccc solid 1px;}
+.collection .account .account-data li:first-child{ border-left:none}
+.collection .account .account-data li h1{ padding-bottom:4px; font-size:18px; text-align:center; }
+.collection .account .account-data li span{ font-size:12px; text-align:center}
+
+.collection .collection-list{padding:20px;}
+.collection .collection-list .collection-list-left{ width:17%; float:left}
+.collection .collection-list .collection-list-left h1{ font-size:16px; font-weight:bold}
+.collection .collection-list .collection-list-left h2{ padding-left:26px; margin:10px 0px 6px; font-size:14px; font-weight:bold}
+.collection .collection-list .collection-list-left ul li{padding:0px 50px 0px 26px; margin:8px 0px; font-size:14px;}
+.collection .collection-list .collection-list-left ul li a{ font-size:12px; color:#999}
+.collection .collection-list .collection-list-left ul li a{
+    /* older safari/Chrome browsers */
+    -webkit-opacity: 0;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 0;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 0;
+    /* IE9 + etc...modern browsers */
+    opacity: 0;
+    /* IE 4-9 */
+    filter:alpha(opacity=0);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.collection .collection-list .collection-list-left ul li:hover a{
+	/* older safari/Chrome browsers */
+    -webkit-opacity: 1;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 1;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 1;
+    /* IE9 + etc...modern browsers */
+    opacity: 1;
+    /* IE 4-9 */
+    filter:alpha(opacity=100);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.collection .collection-list .collection-list-right{ margin-bottom:20px; float:right; width:82%; border-left:#ccc solid 1px; min-height:330px}
+.collection .collection-list .collection-list-right .list-content{ padding-left:20px}
+.collection .collection-list .collection-list-right .list-content li{ padding:20px 40px; border-top:#f0f0f0 solid 1px}
+.collection .collection-list .collection-list-right .list-content li:first-child{border-top:none}
+.collection .collection-list .collection-list-right .list-content li:hover{ background:#f9f9f9}
+.collection .collection-list .collection-list-right .title{ display:block; padding:4px 0px 10px; width:80%; font-size:18px;}
+.collection .collection-list .collection-list-right .title:hover{ color:#77d4c6 !important;}
+.collection .collection-list .collection-list-right .list-content li a:hover{color:#333}
+.collection .collection-list .collection-list-right .list-content li span{ display:block; color:#999; padding:4px 0px 0px}
+.collection .collection-list .collection-list-right .list-content li span b{ font-weight:normal; margin-right:10px}
+.collection .collection-list .collection-list-right .list-content li div span a{ margin-left:20px; color:#999}
+.collection .collection-list .collection-list-right .list-content li div span a{
+    /* older safari/Chrome browsers */
+    -webkit-opacity: 0;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 0;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 0;
+    /* IE9 + etc...modern browsers */
+    opacity: 0;
+    /* IE 4-9 */
+    filter:alpha(opacity=0);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.collection .collection-list .collection-list-right .list-content li:hover a{
+	/* older safari/Chrome browsers */
+    -webkit-opacity: 1;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 1;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 1;
+    /* IE9 + etc...modern browsers */
+    opacity: 1;
+    /* IE 4-9 */
+    filter:alpha(opacity=100);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}

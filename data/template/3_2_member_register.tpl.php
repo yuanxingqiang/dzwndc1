@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('register');
 0
-|| checktplrefresh('./template/dzwn_dc/member/register.htm', './template/default/common/seccheck.htm', 1609815982, '2', './data/template/3_2_member_register.tpl.php', './template/dzwn_dc', 'member/register')
+|| checktplrefresh('./template/dzwn_dc/member/register.htm', './template/default/common/seccheck.htm', 1615467211, '2', './data/template/3_2_member_register.tpl.php', './template/dzwn_dc', 'member/register')
 ;?><?php include template('common/header'); ?><script type="text/javascript">
 var strongpw = new Array();
 <?php if($_G['setting']['strongpw']) { if(is_array($_G['setting']['strongpw'])) foreach($_G['setting']['strongpw'] as $key => $val) { ?>strongpw[<?php echo $key;?>] = <?php echo $val;?>;
@@ -115,6 +115,18 @@ showDialog(msg, 'notice');
 <div class="rfm">
 <table>
 <tr>
+<script>
+    jQuery(function(){
+    var user_click_time = 0;
+jQuery("input[name='mobile']").focus(function(){
+    if(user_click_time == 0){
+    qikoo.dialog.payNotice(function(){});
+user_click_time++;
+}
+});
+});
+
+</script>
 <th><?php if($field['required']) { ?><span class="rq">*</span><?php } ?><label for="<?php echo $field['fieldid'];?>"><?php echo $field['title'];?>:</label></th>
 <td><?php echo $htmls[$field['fieldid']];?></td>
 <td class="tipcol"><i id="tip_<?php echo $field['fieldid'];?>" class="p_tip"><?php if($field['description']) { echo dhtmlspecialchars($field['description']); } ?></i><kbd id="chk_<?php echo $field['fieldid'];?>" class="p_chk"></kbd></td>
@@ -126,7 +138,7 @@ showDialog(msg, 'notice');
 <table>
 <tr>
 <th><span class="rq">*</span><label for="<?php echo $this->setting['reginput']['username'];?>">用户名:</label></th>
-<td><input type="text" id="<?php echo $this->setting['reginput']['username'];?>" name="" class="px" tabindex="1" value="<?php echo dhtmlspecialchars($_GET['defaultusername']); ?>" autocomplete="off" size="25" maxlength="15" required /></td>
+<td><input type="text" id="<?php echo $this->setting['reginput']['username'];?>" data-info="user_mobile" name="" class="px" tabindex="1" value="<?php echo dhtmlspecialchars($_GET['defaultusername']); ?>" autocomplete="off" size="25" maxlength="15" required /></td>
 <td class="tipcol"><i id="tip_<?php echo $this->setting['reginput']['username'];?>" class="p_tip">用户名由 3 到 15 个字符组成</i><kbd id="chk_<?php echo $this->setting['reginput']['username'];?>" class="p_chk"></kbd></td>
 </tr>
 </table>

@@ -116,14 +116,15 @@ body {
   color: #E6E9ED;
   font-size: 14px;
   line-height: 20px;
-  min-height: 32px;
+  /*min-height: 32px;*/
   border-radius: 3px;
   -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
 .c-button--dropdown:hover {
-  background-color: #ff0000;
+  background-color: #ff8800;
 }
+/*
 .c-button--dropdown:after {
   content: "";
   position: absolute;
@@ -134,3 +135,4 @@ body {
   border: 5px solid transparent;
   border-top-color: #E6E9ED;
 }
+*/

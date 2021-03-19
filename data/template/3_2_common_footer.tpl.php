@@ -40,7 +40,7 @@ var focusautoshow = window.setInterval('showfocus(\'next\', 1);', 5000);
 <p>
 <?php if($_G['setting']['site_qq']) { ?><a href="//wpa.qq.com/msgrd?v=3&amp;uin=<?php echo $_G['setting']['site_qq'];?>&amp;site=<?php echo $_G['setting']['bbname'];?>&amp;menu=yes&amp;from=discuz" target="_blank" title="QQ"><img src="<?php echo IMGDIR;?>/site_qq.jpg" alt="QQ" /></a><span class="pipe">|</span><?php } if(is_array($_G['setting']['footernavs'])) foreach($_G['setting']['footernavs'] as $nav) { if($nav['available'] && ($nav['type'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1)) ||
 !$nav['type'] && ($nav['id'] == 'stat' && $_G['group']['allowstatdata'] || $nav['id'] == 'report' && $_G['uid'] || $nav['id'] == 'archiver' || $nav['id'] == 'mobile' || $nav['id'] == 'darkroom'))) { ?><?php echo $nav['code'];?><span class="pipe">|</span><?php } } ?>
-<strong><a href="<?php echo $_G['setting']['siteurl'];?>" target="_blank">大嘴蜗牛</a></strong>
+<strong><a href="<?php echo $_G['setting']['siteurl'];?>" target="_blank">大嘴蜗牛12138</a></strong>
 <?php if($_G['setting']['icp']) { ?>( <a href="http://beian.miit.gov.cn/" target="_blank"><?php echo $_G['setting']['icp'];?></a> )<?php } ?>
 <?php if(!empty($_G['setting']['pluginhooks']['global_footerlink'])) echo $_G['setting']['pluginhooks']['global_footerlink'];?>
 <?php if($_G['setting']['statcode']) { ?><?php echo $_G['setting']['statcode'];?><?php } ?>

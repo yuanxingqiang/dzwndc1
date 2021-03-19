@@ -95,6 +95,16 @@ class table_common_member_profile extends discuz_table_archive
 		}
 		return $birthlist;
 	}
+	
+	public function update_member_profile_mobile($info,$uid){
+        $result = DB::update($this->_table,$info,'uid ='.$uid);
+        return $result;
+    }
+	
+	public function find_by_mobile($mobile){
+		$result = DB::fetch_first('select * from %t where mobile=%s',array($this->_table,$mobile));
+        return $result;
+    }
 }
 
 ?>

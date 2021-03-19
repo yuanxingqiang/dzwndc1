@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('login');
 0
-|| checktplrefresh('./template/default/member/login.htm', './template/default/common/seccheck.htm', 1609227922, '2', './data/template/3_2_member_login.tpl.php', './template/dzwn_dc', 'member/login')
+|| checktplrefresh('./template/dzwn_dc/member/login.htm', './template/default/common/seccheck.htm', 1612352608, '2', './data/template/3_2_member_login.tpl.php', './template/dzwn_dc', 'member/login')
 ;?><?php include template('common/header'); $loginhash = 'L'.random(4);?><?php if(empty($_GET['infloat'])) { ?>
 <div id="ct" class="ptm wp w cl">
 <div class="nfl" id="main_succeed" style="display: none">
@@ -63,19 +63,10 @@
 <table>
 <tr>
 <th>
-<?php if($this->setting['autoidselect']) { ?><label for="username_<?php echo $loginhash;?>">帐号:</label><?php } else { ?>
-<span class="login_slct">
-<select name="loginfield" style="float: left;" width="45" id="loginfield_<?php echo $loginhash;?>">
-<option value="username">用户名</option>
-<?php if(getglobal('setting/uidlogin')) { ?>
-<option value="uid">UID</option>
-<?php } ?>
-<option value="email">Email</option>
-</select>
-</span>
-<?php } ?>
+<label for="username_<?php echo $loginhash;?>">手机号:</label>
+
 </th>
-<td><input type="text" name="username" id="username_<?php echo $loginhash;?>" autocomplete="off" size="30" class="px p_fre" tabindex="1" value="<?php echo $username;?>" /></td>
+<td><input type="text" name="usermobile" id="username_<?php echo $loginhash;?>" autocomplete="off" size="30" class="px p_fre" tabindex="1"  /></td>
 <td class="tipcol"><a href="member.php?mod=<?php echo $_G['setting']['regname'];?>"><?php echo $_G['setting']['reglinkname'];?></a></td>
 </tr>
 </table>

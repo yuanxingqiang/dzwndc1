@@ -1,11 +1,11 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('follow_feed');
 0
-|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/userabout.htm', 1610878749, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
-|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/seditor.htm', 1610878749, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
-|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/upload.htm', 1610878749, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
-|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/seccheck.htm', 1610878749, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
-|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/home/follow_feed_li.htm', 1610878749, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
-|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/home/space_userabout.htm', 1610878749, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
+|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/userabout.htm', 1613833872, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
+|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/seditor.htm', 1613833872, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
+|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/upload.htm', 1613833872, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
+|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/common/seccheck.htm', 1613833872, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
+|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/home/follow_feed_li.htm', 1613833872, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
+|| checktplrefresh('./template/dzwn_dc/home/follow_feed.htm', './template/default/home/space_userabout.htm', 1613833872, 'diy', './data/template/3_diy_home_follow_feed.tpl.php', './template/dzwn_dc', 'home/follow_feed')
 ;?><?php include template('common/header'); ?><div id="pt" class="bm cl">
 <div class="z">
 <a href="./" class="nvhm" title="首页"><?php echo $_G['setting']['bbname'];?></a> <em>&rsaquo;</em>

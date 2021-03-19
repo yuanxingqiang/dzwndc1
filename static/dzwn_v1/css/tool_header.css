@@ -1,0 +1,142 @@
+/*header_top*/
+body{position:relative;}
+.header_top{ width: 100%; height: 40px;background: #5c5b5b;}
+.header_top .top_container{ width: 1200px; margin: 0 auto; color: #B5B5B5;}
+.header_top .top_container a{ line-height: 40px; color: #fff; font-size: 12px;}
+.header_top .top_container a:hover{ text-decoration: underline;}
+.header_top .top_container .top_left{ float: left;}
+.header_top .top_container .top_left a{ margin-left: 24px;}
+.header_top .top_container .top_left a:first-child{ margin-left: 8px;}
+.header_top .top_container .top_left a.green{ color: #77d4c6;}
+.header_top .top_container .top_left a.orange{ color: #ffa500;}
+.header_top .top_container .top_right{float: right; margin-right: 6px;}
+.header_top .top_container .top_right a{color: #b5b5b5;}
+.header_top .top_container .top_right .login{ margin-right: 8px;}
+.header_top .top_container .top_right .register{margin-left: 8px;}
+.header_top .top_container .login_wrap{ float: right;  line-height: 1.5rem; padiing:0px;margin: 0px;}
+.header_top .top_container .login_wrap ul li{border-left: 1px solid #74797e;border-right: 1px solid #74797e; height: 40px; border-width: 0px 1px 0px 0px;position:relative; background:none; float:right;cursor: pointer;}
+.header_top .top_container .login_wrap ul li:last-child{border-left: 1px solid #74797e}
+.header_top .top_container .login_wrap ul li .icon{ width: 20px; height: 20px;padding:10px;}
+.header_top .top_container .login_wrap ul li .tx{ width: 6px; height: 6px; border: 2px solid #fff; border-radius: 100%; background: #CC0000; position:absolute; top:8px; right:8px; z-index: 9;}
+.header_top .top_container .login_wrap ul li .icon .home{ font-size: 20px;}
+.header_top .top_container .login_wrap ul li .icon .sitemap{ font-size: 18px;}
+.header_top .top_container .login_wrap ul li .icon .cogs{ font-size: 18px;}
+.header_top .top_container .login_wrap ul li .icon .bell{ font-size: 18px;}
+.header_top .top_container .login_wrap ul .notify .user_index{ position:absolute; top:40px; right:-124px; z-index:9;font-size: 12px; background: #fff; border:1px solid #ccc; box-shadow: 0px 3px 2px rgba(0,0,0,0.15); border-top:0px; display: none;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd{box-sizing: border-box; width: 320px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .user_img{padding:7px; width: 100px; height: 100px; float: left;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .user_img img{width: 100px;height: 100px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text{padding:7px 7px 0px; width: 192px; height: auto; float:left;height: 112px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p.pd{padding-top:8px}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .edit{display: inline-block; width: 14px; margin-right: 2px; vertical-align: middle;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p a{display: block;width: 100%; text-decoration: none;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p a.user_name:hover{color:#CC0000;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p a.user_name{ font-size: 20px; line-height: 1.5; color:#666;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p a.user_info{font-size: 12px; line-height: 1.5; color:#999; display: inline-block; width: 180px; height: 72px; overflow: hidden;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .pd_admin{display: block; width: 192px; overflow: hidden;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .pd_level{display: block; width: 192px; overflow: hidden;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .admin{ color:#CC0000}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .level3{ background: url(../image/star_level3.gif); display:inline-block; width: 16px; height: 16px; vertical-align: middle; margin-right: 4px; margin-top: -2px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .level2{background: url(../image/star_level2.gif);display:inline-block; width: 16px; height: 16px; vertical-align: middle; margin-right: 4px; margin-top: -2px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_text p .level1{background: url(../image/star_level1.gif);display:inline-block; width: 16px; height: 16px; vertical-align: middle; margin-right: 4px; margin-top: -2px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_last{width: 100%; height: 20px; padding:6px 0px; background: #f5f5f5; float: left;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_last span{margin-left: 7px; color: #999;float: left;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_last span .cog{ margin-right: 4px; display: inline-block; font-size: 14px;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_last span .center{line-height: 12px; color: #999; text-decoration: none;}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_last span .center:hover{color:#CC0000}
+.header_top .top_container .login_wrap ul .notify .user_index .bd .bd_last .signout{ float:right; margin-right: 6px; font-size: 14px; margin-top: 2px; cursor: pointer;}
+.header_top .top_container .login_wrap ul .ugc .user_index{ position:absolute; top:40px; right:-1px; z-index:10;font-size: 12px; background: #fff; border:1px solid #ccc; box-shadow: 0px 3px 2px rgba(0,0,0,0.15); border-top:0px; display: none;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul{ width: 120px; padding:12px 0}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index:hover{background: #ececec;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index .ugc_a{ padding: 6px 20px; display: block; color: #333; line-height: 26px;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index .ugc_a .legal{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index a{text-decoration: none;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index .ugc_a .book{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index .ugc_a .random{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index .ugc_a .comment{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .ugc .user_index .ugc_ul .ugc_index .ugc_a .wrench{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .profile .user_index{ position:absolute; top:40px; right:-42px; z-index:10;font-size: 12px; background: #fff; border:1px solid #ccc; box-shadow: 0px 3px 2px rgba(0,0,0,0.15); border-top:0px; display: none;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul{ width: 120px; padding:12px 0}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index:hover{background: #ececec;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index .profile_a{ padding: 6px 20px; display: block; color: #333; line-height: 26px;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index .profile_a .legal{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index a{text-decoration: none;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index .profile_a .book{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index .profile_a .random{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index .profile_a .comment{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .profile .user_index .profile_ul .profile_index .profile_a .wrench{ margin-right: 6px; font-size: 14px;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index{ position:absolute; top:40px; right:-83px; z-index:10;font-size: 12px; background: #fff; border:1px solid #ccc; box-shadow: 0px 3px 2px rgba(0,0,0,0.15); border-top:0px; display: none;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_text{ width: 450px; height: 32px; border-bottom: 1px solid #e4e4e4; line-height: 32px; text-align: right; padding:0 10px}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_text a{ color: #0068b7;  line-height: 32px; margin-right: 8px; text-decoration: none;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_text a:last-child{margin-right: 0px;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl{overflow-y: scroll; width: 470px; height: 260px;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt{ cursor: pointer; width: 400px; border-bottom:1px solid #e4e4e4; line-height: 27px; padding:13px 15px 13px 38px; word-break: break-all; word-wrap: break-word;position:relative;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt .bell_alt{font-size:20px; position:absolute; top:16px; left: 20px;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt .item_title{ display: inline-block; width: 390px; margin-left: 10px;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt .item_title a{line-height: 26px; overflow: hidden; color: #333; font-size: 14px; font-weight: 700; text-decoration: none;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt .item_title a:hover{color: #CC0000;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt .item_time{ float:right; text-align: right; color: #ccc;}
+.header_top .top_container .login_wrap ul .bell_alt .user_index .bell_dl dt:hover{ background: #f6fafc;}
+
+/*header_nav*/
+.header_nav{ width: 100%; height: 91px; border:1px solid #e5e5e5;}
+.nav_container{width: 1200px; margin: 0 auto; overflow: hidden;}
+.nav_container .nav_logo{width: 326px; height: 52px;margin-top: 20px; float: left;}
+.nav_container .nav_logo img{max-width: 326px;max-height: 52px;}
+.nav_container .nav_ad{ width: 120px; height: 50px; margin:21px 0px 0px 30px; float:left}
+.nav_container .nav_search{float: left; width: 304px; height: 34px; margin: 36px 0px 22px 166px; position: relative;}
+.nav_container .nav_search .search{ border:1px solid #ccc; border-radius: 3px; width: 252px; padding-right: 40px; height: 34px; padding-left: 12px;}
+.nav_container .nav_search i{display: inline-block; width: 36px; height: 36px; background:url(../image/community/small_icon.png) no-repeat; background-position: -4px -1px; position:absolute; right:0px; top:0px; cursor: pointer;}
+.nav_container .er_code{width: 216px; height: 76px; margin-top:8px; float: right;}
+.nav_container .er_code div{width: 100px; height: 76px; display: inline-block; float: right;}
+.nav_container .er_code div .er_code_weixin{width: 12px; line-height: 16px; display: inline-block; margin-top: 6px; vertical-align: top;}
+.nav_container .er_code div:first-child{margin-left: 16px;}
+.nav_container .er_code div .er_code_weibo{width: 12px; line-height: 16px; display: inline-block; margin-top: 6px; vertical-align: top;}
+.nav_container .er_code div i{ background: url(../image/community/er_code.png) no-repeat;}
+.nav_container .er_code div i {display: inline-block; width: 70px; height: 70px; border:1px solid #e4e4e4; margin:2px 0px 0px 6px}
+.nav_container .er_code div i.wx{ background-position: -2px 2px;}
+.nav_container .er_code div i.wb{ background-position: -80px 2px;}
+
+/*右侧导航*/
+.fix_right{position:fixed; bottom:70px; right:50%; z-index: 99999; margin-right:-670px;}
+.fix_right ul li{width: 40px; height: 40px;padding:6px;margin-bottom: 2px; cursor: pointer;}
+.fix_right ul li a{display:block;  color: #fff; width: 24px; line-height: 20px; text-align: center; margin: 0 auto;}
+.fix_right ul li i{display:block; width:20px; height: 20px; background: url(../image/community/small_icon.png) no-repeat; margin:0 auto 4px; cursor: pointer;}
+.fix_right ul li.sq{background: #6ccabd;}
+.fix_right ul li.xy{background: #fd8682;}
+.fix_right ul li.zp{background: #faa388;}
+.fix_right ul li.ts{background: #f1c761;}
+.fix_right ul li.zy{background: #fe8359;}
+.fix_right ul li.zb{background: #9bcce6;}
+.fix_right ul li.qz{background: #aace9c;}
+.fix_right ul li.wd{background: #a79be6;}
+.fix_right ul li.back{background: #e69be0;}
+.fix_right ul li.sq:hover{background: #54b8aa;}
+.fix_right ul li.xy:hover{background: #ee7571;}
+.fix_right ul li.zp:hover{background: #ec8e71;}
+.fix_right ul li.ts:hover{background: #edbb40;}
+.fix_right ul li.zy:hover{background: #fc6f3e;}
+.fix_right ul li.zb:hover{background: #7eb7d6;}
+.fix_right ul li.qz:hover{background: #8dbf79;}
+.fix_right ul li.wd:hover{background: #8979da;}
+.fix_right ul li.back:hover{background: #cf79c8;}
+.fix_right ul li.sq i{background-position: -41px -12px;}
+.fix_right ul li.xy i{background-position: -70px -12px;}
+.fix_right ul li.zp i{background-position: -98px -12px;}
+.fix_right ul li.ts i{background-position: -127px -12px;}
+.fix_right ul li.zy i{background-position: -156px -12px;}
+.fix_right ul li.zb i{background-position: -185px -12px;}
+.fix_right ul li.qz i{background-position: -213px -12px;}
+.fix_right ul li.wd i{background-position: -242px -12px;}
+
+/*nav*/
+.nav-container{ width:100%; height:65px; border-bottom:#e5e5e5 1px solid; background:#fff}
+.nav-main{ width:1200px; margin:0 auto; overflow:hidden;}
+.nav-main .nav-main-left{ float:left; margin-top:7px;}
+.nav-main .nav-main-left a{width: 326px; height: 52px;}
+.nav-main .nav-main-left a img{ max-width: 326px; height: 52px;}
+.nav-main .nav-main-right{ float:right;}
+.nav-main .nav-main-right a{ line-height:65px; font-size:16px; font-family:"微软雅黑"; color:#938289; display:block; float:left; width:72px; height:65px; text-align:center;}
+.nav-main .nav-main-right a.special{width:70px; background:#77d4c6; color:#fff; border-left:#60c2b3 1px solid; border-right:#60c2b3 1px solid;}
+
+

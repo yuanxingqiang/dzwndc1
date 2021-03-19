@@ -137,7 +137,7 @@ a:link,a:visited{
 
 .regist_and_login{
 	margin-top:40px;
-	margin-left:100px;
+	margin-left:56px;
 	float:left;
 	width:100px;
 	height:30px;
@@ -242,7 +242,7 @@ a:link,a:visited{
 	margin:0 auto;
 	float:right;
     width:337px;
-	height:1024px;
+	height:900px;
 	border-top:1px solid #CCC;
 	-moz-box-shadow: 0px 5px 5px 0px #909090;
 	-webkit-box-shadow: 0px 5px 5px 0px #909090;
@@ -252,10 +252,12 @@ a:link,a:visited{
 
 .function_buttons{
 	width:337px;
+	z-index:3;
 }
 
 .ranks{
 	width:337px;
+	z-index:-1;
 }
 .rank{
 	width:337px;
@@ -263,12 +265,18 @@ a:link,a:visited{
 	/*background-color:green;*/
 	margin-bottom:5px;
 }
+#attention.rank{
+	height:350px;
+	
+}
 .rank_head{
 	width:317px;
 	height:30px;
 	padding-left:20px;
-	background-color:yellow;
+	background-color:white;
 	font-family:"微软雅黑";
+	color:#111111;
+	font-weight:bold;
 	font-size:18px;
 	line-height:30px;
 }
@@ -286,7 +294,7 @@ a:link,a:visited{
 }
 .index_ad{
 	width:337px;
-	height:300px;
+	height:220px;
 }
 .stomach_over{
 	float:left;

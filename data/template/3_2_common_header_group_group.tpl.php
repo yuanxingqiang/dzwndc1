@@ -17,7 +17,22 @@
 <meta name="copyright" content="2001-2020 Tencent Cloud." />
 <meta name="MSSmartTagsPreventParsing" content="True" />
 <meta http-equiv="MSThemeCompatible" content="Yes" />
-<base href="<?php echo $_G['siteurl'];?>" /><link rel="stylesheet" type="text/css" href="data/cache/style_3_common.css?<?php echo VERHASH;?>" /><link rel="stylesheet" type="text/css" href="data/cache/style_3_group_group.css?<?php echo VERHASH;?>" /><?php if($_G['uid'] && isset($_G['cookie']['extstyle']) && strpos($_G['cookie']['extstyle'], TPLDIR) !== false) { ?><link rel="stylesheet" id="css_extstyle" type="text/css" href="<?php echo $_G['cookie']['extstyle'];?>/style.css" /><?php } elseif($_G['style']['defaultextstyle']) { ?><link rel="stylesheet" id="css_extstyle" type="text/css" href="<?php echo $_G['style']['defaultextstyle'];?>/style.css" /><?php } ?><script type="text/javascript">var STYLEID = '<?php echo STYLEID;?>', STATICURL = '<?php echo STATICURL;?>', IMGDIR = '<?php echo IMGDIR;?>', VERHASH = '<?php echo VERHASH;?>', charset = '<?php echo CHARSET;?>', discuz_uid = '<?php echo $_G['uid'];?>', cookiepre = '<?php echo $_G['config']['cookie']['cookiepre'];?>', cookiedomain = '<?php echo $_G['config']['cookie']['cookiedomain'];?>', cookiepath = '<?php echo $_G['config']['cookie']['cookiepath'];?>', showusercard = '<?php echo $_G['setting']['showusercard'];?>', attackevasive = '<?php echo $_G['config']['security']['attackevasive'];?>', disallowfloat = '<?php echo $_G['setting']['disallowfloat'];?>', creditnotice = '<?php if($_G['setting']['creditnotice']) { ?><?php echo $_G['setting']['creditnames'];?><?php } ?>', defaultstyle = '<?php echo $_G['style']['defaultextstyle'];?>', REPORTURL = '<?php echo $_G['currenturl_encode'];?>', SITEURL = '<?php echo $_G['siteurl'];?>', JSPATH = '<?php echo $_G['setting']['jspath'];?>', CSSPATH = '<?php echo $_G['setting']['csspath'];?>', DYNAMICURL = '<?php echo $_G['dynamicurl'];?>';</script>
+<base href="<?php echo $_G['siteurl'];?>" />
+
+
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/jquery.min.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/jquery-1.8.3.min.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/select_index.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/home_index.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/books_tab.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/easyform.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/function_button1.js" type="text/javascript" ></script>
+<!--
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/right_sidler.js" type="text/javascript" ></script>
+-->
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/shutter.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/velocity.js" type="text/javascript" ></script>
+<script src="<?php echo $_G['siteurl'];?>static/dzwn_v1/js/js/wangEditor.min.js" type="text/javascript" ></script><link rel="stylesheet" type="text/css" href="data/cache/style_3_common.css?<?php echo VERHASH;?>" /><link rel="stylesheet" type="text/css" href="data/cache/style_3_group_group.css?<?php echo VERHASH;?>" /><?php if($_G['uid'] && isset($_G['cookie']['extstyle']) && strpos($_G['cookie']['extstyle'], TPLDIR) !== false) { ?><link rel="stylesheet" id="css_extstyle" type="text/css" href="<?php echo $_G['cookie']['extstyle'];?>/style.css" /><?php } elseif($_G['style']['defaultextstyle']) { ?><link rel="stylesheet" id="css_extstyle" type="text/css" href="<?php echo $_G['style']['defaultextstyle'];?>/style.css" /><?php } ?><script type="text/javascript">var STYLEID = '<?php echo STYLEID;?>', STATICURL = '<?php echo STATICURL;?>', IMGDIR = '<?php echo IMGDIR;?>', VERHASH = '<?php echo VERHASH;?>', charset = '<?php echo CHARSET;?>', discuz_uid = '<?php echo $_G['uid'];?>', cookiepre = '<?php echo $_G['config']['cookie']['cookiepre'];?>', cookiedomain = '<?php echo $_G['config']['cookie']['cookiedomain'];?>', cookiepath = '<?php echo $_G['config']['cookie']['cookiepath'];?>', showusercard = '<?php echo $_G['setting']['showusercard'];?>', attackevasive = '<?php echo $_G['config']['security']['attackevasive'];?>', disallowfloat = '<?php echo $_G['setting']['disallowfloat'];?>', creditnotice = '<?php if($_G['setting']['creditnotice']) { ?><?php echo $_G['setting']['creditnames'];?><?php } ?>', defaultstyle = '<?php echo $_G['style']['defaultextstyle'];?>', REPORTURL = '<?php echo $_G['currenturl_encode'];?>', SITEURL = '<?php echo $_G['siteurl'];?>', JSPATH = '<?php echo $_G['setting']['jspath'];?>', CSSPATH = '<?php echo $_G['setting']['csspath'];?>', DYNAMICURL = '<?php echo $_G['dynamicurl'];?>';</script>
 <script src="<?php echo $_G['setting']['jspath'];?>common.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <?php if(empty($_GET['diy'])) { $_GET['diy'] = '';?><?php } if(!isset($topic)) { $topic = array();?><?php } ?>
 <meta name="application-name" content="<?php echo $_G['setting']['bbname'];?>" />
@@ -41,10 +56,23 @@
 <link rel="stylesheet" type="text/css" id="diy_common" href="<?php echo $_G['setting']['csspath'];?><?php echo STYLEID;?>_css_diy.css?<?php echo VERHASH;?>" />
 <?php } ?>
 
+
+
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/base.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/homepage.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/shutter.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/function_button_style.css">
+
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/tool_base.css" />
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/tool_header.css" />
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/tool_footer.css" />
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/Font-Awesome-master/css/font-awesome.min.css" />
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/tools.css" />
+
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/reset.min.css">
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/reset_style.css">
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/checkbox.css">
+<link rel="stylesheet" href="<?php echo $_G['siteurl'];?>static/dzwn_v1/css/newthread_activity.css">
 
 </head>
 
@@ -54,15 +82,16 @@
         <div class="menu_shell">
             <div class="menu">
                 <div class="logo">
-    <a href="http://dazuiwoniu.nat123.net/dzwndc/">
-                    <img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/dzwn_logo.jpg" alt="" class="logo_pic">
+    <a href="<?php echo $_G['siteurl'];?>">
+                        <img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/dzwn_logo.jpg" alt="" class="logo_pic">
+</a>
                 </div>
                 <div class="options">
                     <div class="opiton1">
-                        发现	
+                        <a href="<?php echo $_G['siteurl'];?>">发现</a>	
 </div>
                     <div class="opiton1">
-                        关注
+                        <a href="home.php?mod=space&amp;do=home&amp;view=we">关注</a>
                     </div>
                 </div>
                 <div class="options">
@@ -73,7 +102,7 @@
                             <input type="hidden" name="a" value="init"/>
                             <input type="hidden" name="typeid" value="<?php echo $typeid;?>" id="typeid"/>
                             <input type="hidden" name="siteid" value="<?php echo $siteid;?>" id="siteid"/>
-                           <input placeholder="搜索" id="q" type="text"><input type="submit" value="搜 索" id="submit" />
+                            <input placeholder="搜索" id="q" type="text"><input type="submit" value="搜 索" id="submit" />
                         </form>	
                     </div>
                 </div>
@@ -93,13 +122,29 @@
                 <?php } else { ?>
 <div class="options">
                     <div class="opiton2">
-                        <img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/notes.svg" class="notice_pic">
+    <a href="home.php?mod=space&amp;do=notice" id="myprompt" class="a showmenu<?php if($_G['member']['newprompt']) { ?> new<?php } ?>" onmouseover="showMenu({'ctrlid':'myprompt'});">
+<?php if(!$_G['member']['newprompt']) { ?>
+<img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/notes.svg" class="notice_pic">
+<?php } else { ?>
+<img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/note1.jpg" class="notice_pic">
+<?php } ?>
+</a>
 </div>
                     <div class="opiton2">
-                        <img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/messages.svg" class="notice_pic">
+                        <a href="home.php?mod=space&amp;do=pm" id="pm_ntc"<?php if($_G['member']['newpm']) { ?> class="new"<?php } ?>>
+    <?php if($_G['member']['newpm']>0) { ?>
+    <img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/messages.svg" class="notice_pic">
+<?php } else { ?>
+<img src="<?php echo $_G['siteurl'];?>static/dzwn_v1/img/message.svg" class="notice_pic">
+<?php } ?>
+
+</a>
 </div>
                     <div class="opiton3">
-                        <img src="<?php echo $_G['siteurl'];?>uc_server/avatar.php?uid=<?php echo $data['0']['uid'];?>&size=small&ts=1" class="head_pic">					
+    <a href="home.php?mod=space&amp;uid=<?php echo $_G['uid'];?>">
+    <img src="<?php echo $_G['siteurl'];?>uc_server/avatar.php?uid=<?php echo $data['0']['uid'];?>&size=small&ts=1" class="head_pic">
+</a>
+                        
                     </div>
 <div class="log w27">
     <span class="r"><a href="<?php echo $_G['siteurl'];?>member.php?mod=logging&action=logout&formhash=<?php echo $_G['formhash'];?>" target="_top">登出</a></span>

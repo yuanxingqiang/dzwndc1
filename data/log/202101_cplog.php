@@ -8,3 +8,16 @@
 <?PHP exit;?>	1610878566	admin	1	127.0.0.1	nav	GET={operation=headernav; }; POST={};
 <?PHP exit;?>	1610878566	admin	1	127.0.0.1	nav	GET={frames=yes; operation=headernav; }; POST={};
 <?PHP exit;?>	1610878567	admin	1	127.0.0.1	nav	GET={operation=headernav; }; POST={};
+<?PHP exit;?>	1612014904	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1612014904	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1612014907	admin	1	127.0.0.1	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1612014909	admin	1	127.0.0.1	nav	GET={}; POST={};
+<?PHP exit;?>	1612014968	admin	1	127.0.0.1	nav	GET={operation=headernav; do=edit; id=48; }; POST={};
+<?PHP exit;?>	1612014981	admin	1	127.0.0.1	nav	GET={operation=headernav; do=edit; id=48; namenew=活动; urlnew=tool.php?mod=index&amp;action=index; editsubmit=提交; }; POST={namenew=活动; urlnew=tool.php?mod=index&amp;action=index; editsubmit=提交; };
+<?PHP exit;?>	1612014985	admin	1	127.0.0.1	nav	GET={operation=headernav; }; POST={};
+<?PHP exit;?>	1612015087	admin	1	127.0.0.1	nav	GET={operation=headernav; do=edit; id=48; }; POST={};
+<?PHP exit;?>	1612015100	admin	1	127.0.0.1	nav	GET={operation=headernav; do=edit; id=48; namenew=活动; urlnew=activity.php?mod=index&amp;action=index; editsubmit=提交; }; POST={namenew=活动; urlnew=activity.php?mod=index&amp;action=index; editsubmit=提交; };
+<?PHP exit;?>	1612015105	admin	1	127.0.0.1	nav	GET={operation=headernav; }; POST={};
+<?PHP exit;?>	1612015115	admin	1	127.0.0.1	tools	GET={operation=updatecache; }; POST={};
+<?PHP exit;?>	1612015120	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=2; type={0=data; 1=tpl; 2=blockclass; }; confirmed=确定; }; POST={type={0=data; 1=tpl; 2=blockclass; }; confirmed=确定; };
+<?PHP exit;?>	1612015121	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=3; type=data_tpl_blockclass; }; POST={};

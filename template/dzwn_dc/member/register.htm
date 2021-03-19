@@ -127,6 +127,18 @@
 								<div class="rfm">
 									<table>
 										<tr>
+										<script>
+										    jQuery(function(){
+											    var user_click_time = 0;
+												jQuery("input[name='mobile']").focus(function(){
+												    if(user_click_time == 0){
+													    qikoo.dialog.payNotice(function(){});
+														user_click_time++;
+													}
+												});
+											});
+
+										</script>
 											<th><!--{if $field['required']}--><span class="rq">*</span><!--{/if}--><label for="$field['fieldid']">$field[title]:</label></th>
 											<td>$htmls[$field['fieldid']]</td>
 											<td class="tipcol"><i id="tip_$field['fieldid']" class="p_tip"><!--{if $field['description']}--><!--{echo dhtmlspecialchars($field[description])}--><!--{/if}--></i><kbd id="chk_$field['fieldid']" class="p_chk"></kbd></td>
@@ -145,7 +157,7 @@
 									<table>
 										<tr>
 											<th><span class="rq">*</span><label for="{$this->setting['reginput']['username']}">{lang username}:</label></th>
-											<td><input type="text" id="{$this->setting['reginput']['username']}" name="" class="px" tabindex="1" value="{echo dhtmlspecialchars($_GET[defaultusername])}" autocomplete="off" size="25" maxlength="15" required /></td>
+											<td><input type="text" id="{$this->setting['reginput']['username']}" data-info="user_mobile" name="" class="px" tabindex="1" value="{echo dhtmlspecialchars($_GET[defaultusername])}" autocomplete="off" size="25" maxlength="15" required /></td>
 											<td class="tipcol"><i id="tip_{$this->setting['reginput']['username']}" class="p_tip">{lang register_username_tips}</i><kbd id="chk_{$this->setting['reginput']['username']}" class="p_chk"></kbd></td>
 										</tr>
 									</table>

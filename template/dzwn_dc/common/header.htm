@@ -17,6 +17,25 @@ $_G['setting']['seohead']
 <meta name="MSSmartTagsPreventParsing" content="True" />
 <meta http-equiv="MSThemeCompatible" content="Yes" />
 <base href="{$_G['siteurl']}" />
+
+
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/jquery.min.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/select_index.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/home_index.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/books_tab.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/easyform.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/function_button1.js" ></script>
+<!--
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/right_sidler.js" ></script>
+-->
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/shutter.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/velocity.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/qikoo.js" ></script>
+<script type="text/javascript" src="{$_G['siteurl']}static/dzwn_v1/js/js/wangEditor.min.js" ></script>
+
+
+
 <!--{csstemplate}-->
 <script type="text/javascript">var STYLEID = '{STYLEID}', STATICURL = '{STATICURL}', IMGDIR = '{IMGDIR}', VERHASH = '{VERHASH}', charset = '{CHARSET}', discuz_uid = '$_G[uid]', cookiepre = '{$_G[config][cookie][cookiepre]}', cookiedomain = '{$_G[config][cookie][cookiedomain]}', cookiepath = '{$_G[config][cookie][cookiepath]}', showusercard = '{$_G[setting][showusercard]}', attackevasive = '{$_G[config][security][attackevasive]}', disallowfloat = '{$_G[setting][disallowfloat]}', creditnotice = '<!--{if $_G['setting']['creditnotice']}-->$_G['setting']['creditnames']<!--{/if}-->', defaultstyle = '$_G[style][defaultextstyle]', REPORTURL = '$_G[currenturl_encode]', SITEURL = '$_G[siteurl]', JSPATH = '$_G[setting][jspath]', CSSPATH = '$_G[setting][csspath]', DYNAMICURL = '$_G[dynamicurl]';</script>
 <script type="text/javascript" src="{$_G[setting][jspath]}common.js?{VERHASH}"></script>
@@ -50,10 +69,24 @@ $_G['setting']['seohead']
 	<link rel="stylesheet" type="text/css" id="diy_common" href="{$_G['setting']['csspath']}{STYLEID}_css_diy.css?{VERHASH}" />
 <!--{/if}-->
 
+
+<link href="{$_G['siteurl']}static/dzwn_v1/img/favicon.ico" rel="shortcut icon">
 <link rel="stylesheet" type="text/css" href="{$_G['siteurl']}static/dzwn_v1/css/base.css">
 <link rel="stylesheet" type="text/css" href="{$_G['siteurl']}static/dzwn_v1/css/homepage.css">
 <link rel="stylesheet" type="text/css" href="{$_G['siteurl']}static/dzwn_v1/css/shutter.css">
 <link rel="stylesheet" type="text/css" href="{$_G['siteurl']}static/dzwn_v1/css/function_button_style.css">
+
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/tool_base.css" />
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/tool_header.css" />
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/tool_footer.css" />
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/Font-Awesome-master/css/font-awesome.min.css" />
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/tools.css" />
+
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/reset.min.css">
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/reset_style.css">
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/checkbox.css">
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/newthread_activity.css">
+<link rel="stylesheet" href="{$_G['siteurl']}static/dzwn_v1/css/qikoo.css">
 
 </head>
 
@@ -63,15 +96,16 @@ $_G['setting']['seohead']
         <div class="menu_shell">
             <div class="menu">
                 <div class="logo">
-				    <a href="http://dazuiwoniu.nat123.net/dzwndc/">
-                    <img src="{$_G['siteurl']}static/dzwn_v1/img/dzwn_logo.jpg" alt="" class="logo_pic">
+				    <a href="{$_G['siteurl']}">
+                        <img src="{$_G['siteurl']}static/dzwn_v1/img/dzwn_logo.jpg" alt="" class="logo_pic">
+					</a>
                 </div>
                 <div class="options">
                     <div class="opiton1">
-                        发现	
+                        <a href="{$_G['siteurl']}">发现</a>	
 					</div>
                     <div class="opiton1">
-                        关注
+                        <a href="home.php?mod=space&do=home&view=we">关注</a>
                     </div>
                 </div>
                 <div class="options">
@@ -82,7 +116,7 @@ $_G['setting']['seohead']
                             <input type="hidden" name="a" value="init"/>
                             <input type="hidden" name="typeid" value="{$typeid}" id="typeid"/>
                             <input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
-                           <input placeholder="搜索" id="q" type="text"><input type="submit" value="搜 索" id="submit" />
+                            <input placeholder="搜索" id="q" type="text"><input type="submit" value="搜 索" id="submit" />
                         </form>	
                     </div>
                 </div>
@@ -95,20 +129,36 @@ $_G['setting']['seohead']
 				<!--{if $_G['member']['uid'] == 0}-->
                 <div class="regist_and_login">
 					<div class="log w27">
-					    <span class="r"><a href="{$_G['siteurl']}/member.php?mod=register" target="_blank">注册</a> <span>|</span> <a href="{$_G['siteurl']}/member.php?mod=logging&action=login" target="_top">登录</a></span>
+					    <span class="r"><a href="{$_G['siteurl']}member.php?mod=register" target="_blank">注册</a> <span>|</span> <a href="{$_G['siteurl']}member.php?mod=logging&action=login" target="_top">登录</a></span>
 					</div>
 				</div>
 				
                 <!--{else}-->
 				<div class="options">
                     <div class="opiton2">
-                        <img src="{$_G['siteurl']}static/dzwn_v1/img/notes.svg" class="notice_pic">
+					    <a href="home.php?mod=space&do=notice" id="myprompt" class="a showmenu{if $_G[member][newprompt]} new{/if}" onmouseover="showMenu({'ctrlid':'myprompt'});">
+							<!--{if !$_G[member][newprompt]}-->
+							<img src="{$_G['siteurl']}static/dzwn_v1/img/notes.svg" class="notice_pic">
+							<!--{else}-->
+							<img src="{$_G['siteurl']}static/dzwn_v1/img/note1.jpg" class="notice_pic">
+							<!--{/if}-->
+						</a>
 					</div>
                     <div class="opiton2">
-                        <img src="{$_G['siteurl']}static/dzwn_v1/img/messages.svg" class="notice_pic">
+                        <a href="home.php?mod=space&do=pm" id="pm_ntc"{if $_G[member][newpm]} class="new"{/if}>
+						    <!--{if $_G[member][newpm]>0}-->
+						    <img src="{$_G['siteurl']}static/dzwn_v1/img/messages.svg" class="notice_pic">
+							<!--{else}-->
+							<img src="{$_G['siteurl']}static/dzwn_v1/img/message.svg" class="notice_pic">
+							<!--{/if}-->
+							
+						</a>
 					</div>
                     <div class="opiton3">
-                        <img src="{$_G['siteurl']}uc_server/avatar.php?uid={$data[0]['uid']}&size=small&ts=1" class="head_pic">					
+					    <a href="home.php?mod=space&uid=$_G[uid]">
+						    <img src="{$_G['siteurl']}uc_server/avatar.php?uid={$data[0]['uid']}&size=small&ts=1" class="head_pic">
+						</a>
+                        
                     </div>
 					<div class="log w27">
 					    <span class="r"><a href="{$_G['siteurl']}member.php?mod=logging&action=logout&formhash={$_G['formhash']}" target="_top">登出</a></span>
@@ -126,7 +176,10 @@ $_G['setting']['seohead']
                 <div id="recommended_topics_inner">
 					
 					
-					
+					<div class="topic">
+							    
+					</div>
+							
 					<!--{loop $_G['setting']['navs'] $nav}-->
 					    <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
 						    <div class="topic">

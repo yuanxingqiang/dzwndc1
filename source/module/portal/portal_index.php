@@ -29,16 +29,23 @@ if(isset($_G['makehtml'])){
 	helper_makehtml::portal_index();
 }
 
-$page = intval($_GET['page']);//接收discuz！传过来的分页信息，并转成整形
-if($page<1){
-	$page =1;//让$page最小值为1，不出现小数
+if(!isset($_GET['action'])||empty($_GET['action'])||$_GET['action']==''){
+	$_GET['action']='index';
 }
-$forum_info = C::t('forum_post')->find_limit_forum_and_image($page);
-$newest_10_forums_info = C::t('forum_post')->find_newest_10_forums();
-$most_followed_10_forums_info = C::t('forum_thread')->find_most_followed_10_forums();
-$forum_post_count=C::t('forum_post')->get_table_count();
-$perpage=8;
-$page_html = multi($forum_post_count,$perpage,$page,'portal.php');
 
-include_once template('diy:portal/index');
-?>
+if($_GET['action']=='index'){
+	$page = intval($_GET['page']);//接收discuz！传过来的分页信息，并转成整形
+	if($page<1){
+		$page =1;//让$page最小值为1，不出现小数
+	}
+	$forum_info = C::t('forum_post')->find_limit_forum_and_image($page);
+	$newest_10_forums_info = C::t('forum_post')->find_newest_10_forums();
+	$most_followed_10_forums_info = C::t('forum_thread')->find_most_followed_10_forums();
+	$forum_post_count=C::t('forum_post')->get_table_count();
+	$perpage=8;
+	$page_html = multi($forum_post_count,$perpage,$page,'portal.php');
+
+
+	include_once template('diy:portal/index');
+}
+

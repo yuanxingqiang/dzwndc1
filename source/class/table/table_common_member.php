@@ -123,6 +123,15 @@ class table_common_member extends discuz_table_archive
 		}
 		return $users;
 	}
+	
+	
+	public function fetch_by_uid($uid) {
+		$user;
+		if($uid) {
+			$user = DB::fetch_first('SELECT * FROM %t WHERE uid=%s', array($this->_table, $uid));
+		}
+		return $user;
+	}
 
 	public function count_by_groupid($groupid) {
 		return $groupid ? DB::result_first('SELECT COUNT(*) FROM %t WHERE '.DB::field('groupid', $groupid), array($this->_table)) : 0;
@@ -515,6 +524,10 @@ class table_common_member extends discuz_table_archive
 
 	public function update_groupid_by_groupid($source, $target) {
 		return DB::query('UPDATE %t SET groupid=%d WHERE adminid <= 0 AND groupid=%d', array($this->_table, $target, $source));
+	}
+	
+	public function update_username_by_uid($uid, $username){
+		return DB::update($this->_table, ['username'=>$username],['uid' => intval($uid)],'UNBUFFERED');
 	}
 }
 

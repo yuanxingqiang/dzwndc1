@@ -30,6 +30,7 @@ class logging_ctl {
 
 	function on_login() {
 		global $_G;
+		
 		if($_G['uid']) {
 			$referer = dreferer();
 			$ucsynlogin = $this->setting['allowsynlogin'] ? uc_user_synlogin($_G['uid']) : '';
@@ -91,7 +92,22 @@ class logging_ctl {
 			if(!$_GET['password'] || $_GET['password'] != addslashes($_GET['password'])) {
 				showmessage('profile_passwd_illegal');
 			}
-			$result = userlogin($_GET['username'], $_GET['password'], $_GET['questionid'], $_GET['answer'], $this->setting['autoidselect'] ? 'auto' : $_GET['loginfield'], $_G['clientip']);
+			
+			$preg_phone='/^1[34578]\d{9}$/ims';
+			$user_mobile;
+			if(preg_match($preg_phone,trim($_GET['usermobile']))){
+				$user_mobile = trim($_GET['usermobile']);
+				
+			}else{
+				showmessage('手机号格式不正确，请填写正确的手机号','member.php?mod=register',array(),array('alert'=>'error','msgtype'=>2));
+			}
+			
+			$member_profile = C::t('common_member_profile')->find_by_mobile($user_mobile);
+			$userinfo_in_table = C::t('common_member')->fetch_by_uid($member_profile['uid']);
+			$username_in_table = $userinfo_in_table['username'];
+			
+			
+			$result = userlogin($username_in_table, $_GET['password'], $_GET['questionid'], $_GET['answer'], $this->setting['autoidselect'] ? 'auto' : $_GET['loginfield'], $_G['clientip']);
 			$uid = $result['ucresult']['uid'];
 
 			if(!empty($_GET['lssubmit']) && ($result['ucresult']['uid'] == -3 || $seccodecheck)) {
@@ -634,6 +650,19 @@ class register_ctl {
 				} else {
 				    $password = md5(random(10));
 				}
+				
+				//验证手机号是否正确
+				$preg_phone='/^1[34578]\d{9}$/ims';
+				$user_mobile;
+				if(preg_match($preg_phone,trim($_GET['mobile']))){
+					$user_mobile = trim($_GET['mobile']);
+					
+				}else{
+					showmessage('手机号格式不正确，请填写正确的手机号','member.php?mod=register',array(),array('alert'=>'error','msgtype'=>2));
+				}
+				
+				
+				
 				//新代码结束
 				/*原代码
 				$email = strtolower(trim($_GET['email']));
@@ -959,6 +988,14 @@ class register_ctl {
 				'</script>',
 				'striptags' => false,
 			);
+			
+			//新增注册手机号的功能
+			$info=array();
+			$info['mobile'] = $user_mobile;
+			
+			C::t('common_member_profile')->update_member_profile_mobile($info,$uid);
+			
+			
 			showmessage($message, $url_forward, $param, $extra);
 		}
 	}

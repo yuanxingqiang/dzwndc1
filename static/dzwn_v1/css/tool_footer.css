@@ -1,0 +1,66 @@
+
+.special{margin-top: 0px !important;}
+/*footer*/
+.footer{background-color:#232529;color:#fff; width: 100%; margin-top: 60px;}
+.footer .inner{padding:45px 0 25px;overflow:hidden; width: 1200px; margin: 0 auto;}
+.footer .inner a{color:#fff;}
+.footer .inner a:hover{color:#77d4c6;}
+.footer .inner div{float:left;}
+.footer .inner .copyright{width:500px;}
+.footer .inner .copyright .flinks{margin:10px 0 30px;}
+.footer .inner .copyright .flinks a{display:inline-block;height:66px;background-repeat:no-repeat;background-position:0 50%;line-height:66px;}
+.footer .inner .copyright .flinks a.logo{width:212px;margin-right:24px;background-image:url(../image/php_logo.png); margin-left: -4px;}
+.footer .inner .copyright .flinks a.sina{width:32px;margin-right:14px;background-image:url(../image/wb.png); height: 32px; vertical-align: bottom; margin-bottom: 16px;}
+.footer .inner .copyright .flinks a.qq{width:32px;margin-right:14px;background-image:url(../image/q.png); height: 32px; vertical-align: bottom; margin-bottom: 16px;}
+.footer .inner .copyright .fnav{line-height:26px;}
+.footer .inner .kefu{width:260px; margin-left: 30px;}
+.footer .inner .kefu h2{margin-bottom:20px;font-size:20px; font-weight:bold; font-family: "微软雅黑"; margin-top: 10px;}
+.footer .inner .kefu p{display:block;height:45px;background-repeat:no-repeat;background-position:0 50%;font-family:"Microsoft Yahei";font-size:18px;line-height:45px;margin-bottom: 20px;}
+.footer .inner .kefu p i{font-size:12px;font-style:normal; display: inline-block; width: 45px; height: 45px; vertical-align: middle; margin-right: 20px; }
+.footer .inner .kefu p.tel400 i{margin-bottom:12px;background-image:url(../image/phone1.png); }
+.footer .inner .kefu p.qq i{margin-bottom:21px;background-image:url(../image/qq_qq.png);}
+.footer .inner .kefu p.qq{margin-bottom: 4px;}
+.footer .inner .kefu p.last{font-size: 12px; margin-bottom: 0px;}
+.footer .inner .weixin{text-align:center; margin-left: 44px; margin-top: 20px;}
+.footer .inner .weixin p{margin-bottom:8px;font-size:12px;line-height:20px;}
+.footer .inner .weixin img{display:block;}
+
+/*small_footer*/
+.small_footer{ width: 100%; height: auto; border-top:1px solid #e5e5e5; position:relative; overflow: hidden;}
+.footer_container{ width:1200px; height: 330px;margin: 0 auto;}
+.footer_container .title{overflow: hidden; border-bottom:1px solid #e5e5e5; padding: 25px 0; color: #666;}
+.footer_container .title .title_left{ font-size: 16px; color:#fff; background: #b4b4b4; line-height: 22px; padding:10px; width: 40px; height: 40px; float: left; text-align: center;}
+.footer_container .title .relief_text{ float: left; width: 1110px; height: 60px; margin-left: 30px;}
+.footer_container .title .relief_text p{ color: #666; font-size: 12px; line-height: 26px;}
+.footer_container .title .contacts_text{ float: left; width: 1110px; height: 60px; margin-left: 30px;}
+.footer_container .title .contacts_text p{ color: #666; font-size: 12px; line-height: 60px;}
+.footer_container .title .blue{background: #006599;}
+.footer_container .title .link_text{ float: left; width: 1110px; height: 60px; margin-left: 30px;}
+.footer_container .title .link_text ul{padding:6px 0}
+.footer_container .title .link_text ul li{float:left; margin-right: 12px; line-height: 26px;}
+.footer_container .title .link_text ul li a{color:#666;}
+.footer_container .title .link_text ul li a:hover{color:#c00}
+.footer_container .title:last-child{border-bottom: 0px;}
+
+/*footer_other*/
+.footer_other{width: 100%; height: auto; overflow: hidden; position: relative; background: #232529;}
+.footer_other .other_container{width: 1200px; margin: 0 auto;}
+.footer_other .other_container .content_us{ padding:15px 10px 8px 0px; line-height: 34px; border-bottom:1px solid #000;box-shadow:0px 1px 0 #4A4A4A;}
+.footer_other .other_container .content_us span{ padding : 6px 0px; }
+.footer_other .other_container .content_us span a{ padding:0px 10px 0px 00px; border-right:1px solid #000; color:#939393; margin-right: 10px; box-shadow:1px 0 0 #4A4A4A;font-size: 14px;}
+.footer_other .other_container .content_us span a.last{border-right: 0px; box-shadow: none;}
+.footer_other .other_container .content_us span a:hover{ color: #c3c3c3;}
+.footer_other .other_container .content_text{ padding:8px 0px}
+.footer_other .other_container .content_text p{line-height: 22px; color:#8A8A8A}
+.footer_other .other_container .content_text p .content_qq{ margin-right: 16px;}
+.footer_other .other_container .content_text p .content_qq i{ background:url(../image/small_icon.png) -9px -104px; display: inline-block; width: 16px; height: 16px; vertical-align: middle; margin-top: -1px; margin-right: 6px;}
+.footer_other .other_container .content_text p .content_tel{ margin-right: 16px;}
+.footer_other .other_container .content_text p .content_tel i{font-size: 18px; margin-right: 6px; vertical-align: middle;}
+.footer_other .other_container .content_text p .content_time{ margin-right: 16px;}
+.footer_other .other_container .content_text p .content_time i{font-size: 18px; margin-right: 6px; vertical-align: middle;}
+
+
+
+
+
+

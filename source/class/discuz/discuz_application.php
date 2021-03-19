@@ -350,7 +350,12 @@ class discuz_application extends discuz_base{
 			exit(header("HTTP/1.1 403 Forbidden"));
 		}
 	}
-
+	
+	/*
+	 *  原_xss_check函数
+	 */
+	 
+	/*
 	private function _xss_check() {
 
 		static $check = array('"', '>', '<', '\'', '(', ')', 'CONTENT-TRANSFER-ENCODING');
@@ -378,6 +383,19 @@ class discuz_application extends discuz_base{
 
 		return true;
 	}
+	*/
+	
+	/*
+	 *  新_xss_check函数
+	 */
+	private function _xss_check() {
+		$temp = strtoupper(urldecode(urldecode($_SERVER['REQUEST_URI'])));
+		if(strpos($temp, '<') !== false || strpos($temp, '"') !== false || strpos($temp, 'CONTENT-TRANSFER-ENCODING') !== false) {
+			system_error('request_tainting');
+		}
+		return true;
+	}
+	
 
 	private function _get_client_ip() {
 		$ip = $_SERVER['REMOTE_ADDR'];
